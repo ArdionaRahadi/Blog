@@ -1,0 +1,598 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* navigation */
+.top_bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  padding-top: 15px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  transition: all 0.5s ease-in-out;
+  color: #eaeaea;
+  z-index: 1;
+}
+
+.top_bar.sticky {
+  position: fixed;
+  background: rgb(2, 63, 87);
+  color: #eaeaea;
+}
+
+.top_bar h1 {
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.top_bar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.top_bar ul li {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top_bar ul .close {
+  display: none;
+}
+
+.top_bar ul li a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1em;
+  transition: 0.4s ease;
+}
+
+.top_bar ul li:hover a {
+  color: #75c8cf;
+}
+
+.top_bar .menu {
+  display: none;
+}
+/* navigation */
+
+/* home */
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 7em;
+  letter-spacing: 50px;
+  overflow: hidden;
+  border-right: 3px solid #fff;
+  width: 100%;
+  white-space: nowrap;
+  text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 10px #75b5bb, 0 0 10px #5ca8af,
+    0 0 15px #78d0d8, 0 0 15px #75acb1, 0 0 20px #6ea3a8;
+  animation: typing 2s ease-in-out infinite alternate,
+    cursor 0.4s step-end infinite alternate,
+    neonGlow 2s ease-in-out infinite alternate;
+  padding-left: 15px;
+}
+
+/* blinking cursor */
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* typing aniamtion */
+@keyframes typing {
+  0% {
+    width: 0%;
+  }
+}
+
+/* neon glow animation */
+@keyframes neonGlow {
+  0% {
+    text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 10px #75b5bb, 0 0 10px #5ca8af,
+      0 0 15px #78d0d8, 0 0 15px #75acb1, 0 0 20px #6ea3a8;
+  }
+  100% {
+    text-shadow: 3px 5px 5px #fff, 3px 5px 5px #fff, 4px 6px 10px #75b5bb,
+      4px 6px 10px #5ca8af, 5px 7px 15px #78d0d8, 5px 7px 15px #75acb1,
+      6px 8px 20px #6ea3a8;
+  }
+}
+
+.hero .bg_video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  object-position: center;
+  background: #0c1c24;
+}
+/* home */
+
+/* about */
+.container-about {
+  padding-top: 4.5em;
+}
+
+.about-title {
+  text-align: center;
+}
+
+.about-title h1 {
+  font-size: 2em;
+}
+
+.article {
+  margin: 3em;
+}
+
+.container-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 3px solid black; */
+  width: 100%;
+  margin: 20px auto;
+  padding: 15px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.container-text .pengertian {
+  width: 40%;
+}
+
+.container-text .pengertian h3,
+.container-text .fungsi h3,
+.container-text .komponen h3 {
+  font-size: 1.3em;
+  margin-bottom: 5px;
+}
+
+.container-text .pengertian p,
+.container-text .fugsi ol li,
+.container-text .komponen p,
+.container-text .komponen .sumber,
+.container-text .komponen ul li {
+  font-size: 1em;
+  line-height: 24px;
+}
+
+.container-text .fungsi,
+.container-text .pengertian,
+.container-text .komponen {
+  margin: 0 5.5em;
+}
+
+.container-text .fungsi ol,
+.container-text .komponen ul {
+  margin-left: 1.05em;
+}
+
+.container-text .komponen ul {
+  margin-bottom: 5px;
+}
+
+.container-text .komponen .sumber a {
+  text-decoration: none;
+  color: #5da0a7;
+}
+
+.container-text .komponen p {
+  margin-bottom: 5px;
+}
+/* about */
+
+/* tutorials */
+.header {
+  padding-top: 4.5em;
+}
+
+.header .title {
+  margin-left: 150px;
+}
+
+.header .title h1 {
+  font-size: 1.6em;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.alat_bahan .title h3 {
+  font-size: 1.3em;
+  margin-bottom: 5px;
+}
+
+.alat_bahan .title ul {
+  margin-left: 20px;
+  margin-bottom: 80px;
+}
+
+.langkah_langkah .title {
+  margin-bottom: 5px;
+}
+
+.langkah_langkah .container {
+  margin-left: 150px;
+}
+
+.langkah_langkah .container .text {
+  margin-bottom: 10px;
+  font-size: 1em;
+  line-height: 24px;
+}
+
+.langkah_langkah .container .text .gambar {
+  /* border: 3px solid black; */
+  width: 40%;
+  margin-left: 17px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.langkah_langkah .container .text .container_gambar {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.langkah_langkah .container .text .gambar_1,
+.langkah_langkah .container .text .gambar_2 {
+  width: 40%;
+  margin-top: 10px;
+  margin-left: 17px;
+  margin-bottom: 20px;
+}
+
+.langkah_langkah .container .text .gambar_1 img,
+.langkah_langkah .container .text .gambar_2 img {
+  width: 100%;
+}
+
+.langkah_langkah .container .text .gambar img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.langkah_langkah .container_hasil {
+  display: flex;
+  margin-top: 15px;
+}
+
+.langkah_langkah .container_hasil .sebelum,
+.langkah_langkah .container_hasil .sesudah {
+  width: 20%;
+}
+
+.langkah_langkah .container_hasil .sebelum h4,
+.langkah_langkah .container_hasil .sesudah h4 {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.langkah_langkah .container_hasil .sebelum img,
+.langkah_langkah .container_hasil .sesudah img {
+  width: 100%;
+}
+
+.kesimpulan {
+  margin: 20px 150px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.kesimpulan h2 {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.kesimpulan p {
+  font-size: 1em;
+}
+/* tutorials */
+
+/* footer */
+footer {
+  background: rgb(2, 63, 87);
+  color: #eaeaea;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer .socials {
+  margin-top: 15px;
+}
+
+footer a {
+  color: rgb(4, 184, 255);
+  text-decoration: none;
+  transition: 0.4s ease-in-out;
+}
+
+footer a:hover {
+  color: #eaeaea;
+}
+
+footer .socials a {
+  text-decoration: none;
+  font-size: 1.3em;
+  color: #eaeaea;
+  margin: 0 10px;
+  transition: 0.4s ease-in-out;
+}
+
+footer .socials a:hover {
+  color: rgb(4, 184, 255);
+}
+/* footer */
+
+/* break points */
+/* laptop */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* home */
+  .hero h1 {
+    font-size: 3em;
+  }
+  /* home */
+
+  /* about */
+  .container-text {
+    margin: 0 auto;
+  }
+  .container-text .fungsi,
+  .container-text .pengertian,
+  .container-text .komponen {
+    margin: 0 1em;
+  }
+  /* about */
+
+  /* tutorials */
+  .header .title {
+    margin: 15px 75px;
+  }
+
+  .langkah_langkah .container {
+    margin: 15px 75px;
+  }
+
+  .langkah_langkah .container .text .gambar {
+    width: 65%;
+  }
+
+  .langkah_langkah .container .text .container_gambar {
+    gap: 0;
+  }
+
+  .langkah_langkah .container .text .gambar_1,
+  .langkah_langkah .container .text .gambar_2 {
+    width: 65%;
+  }
+
+  .langkah_langkah .container_hasil .sebelum,
+  .langkah_langkah .container_hasil .sesudah {
+    width: 30%;
+  }
+
+  .langkah_langkah .container_hasil .sesudah {
+    margin-left: 0;
+  }
+
+  .kesimpulan {
+    margin: 20px 75px;
+  }
+  /* tutorials */
+}
+
+/* mobile */
+@media only screen and (max-width: 767px) {
+  /* navigation */
+  .top_bar {
+    justify-content: space-between;
+    padding: 12px;
+  }
+
+  .top_bar::before {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .top_bar ul {
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    right: -100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+    width: 50%;
+    background: rgb(4, 100, 138);
+    color: #eaeaea;
+    padding: 15px;
+    transition: all 0.5s ease-in-out;
+    z-index: 3;
+  }
+
+  .top_bar ul::before {
+    content: "";
+    position: relative;
+  }
+
+  .top_bar ul .close {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 6px;
+    font-size: 1.8em;
+  }
+
+  .top_bar ul.list {
+    right: 0;
+  }
+
+  .top_bar ul li {
+    margin: 15px 20px 0;
+    font-size: 1.03em;
+  }
+
+  .top_bar .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6em;
+  }
+  /* navigation */
+
+  /* home */
+  .hero h1 {
+    font-size: 2.75em;
+    letter-spacing: 13px;
+  }
+  /* home */
+
+  /* about */
+  .about-title h1 {
+    font-size: 2em;
+  }
+
+  .article {
+    margin: 1em;
+  }
+
+  .container-text {
+    margin: 0.3em auto;
+  }
+
+  .container-text .pengertian {
+    width: auto;
+  }
+
+  .container-text .fungsi,
+  .container-text .pengertian,
+  .container-text .komponen {
+    margin: 0.5em auto;
+  }
+
+  .container-text .pengertian h3,
+  .container-text .fungsi h3,
+  .container-text .komponen h3 {
+    font-size: 1.08em;
+  }
+
+  .container-text .pengertian p,
+  .container-text .fugsi ol li,
+  .container-text .komponen p,
+  .container-text .komponen .sumber,
+  .container-text .komponen ul li {
+    font-size: 0.85em;
+  }
+  /* about */
+
+  /* tutorials */
+  .header {
+    padding-top: 4em;
+  }
+
+  .header .title,
+  .langkah_langkah .container {
+    margin: 15px 30px;
+  }
+
+  .header .title h1 {
+    font-size: 1.2em;
+  }
+
+  .alat_bahan .title h3 {
+    font-size: 1em;
+  }
+
+  .langkah_langkah .title h2 {
+    font-size: 1.3em;
+  }
+
+  .alat_bahan .title ul {
+    font-size: 0.94em;
+    margin-bottom: 35px;
+  }
+
+  .langkah_langkah .container .text p {
+    font-size: 0.88em;
+  }
+
+  .langkah_langkah .container .text .gambar {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .langkah_langkah .container .text .container_gambar {
+    gap: 0;
+  }
+
+  .langkah_langkah .container .text .gambar_1,
+  .langkah_langkah .container .text .gambar_2 {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .langkah_langkah .container_hasil .sebelum,
+  .langkah_langkah .container_hasil .sesudah {
+    width: 50%;
+    margin-top: 5px;
+  }
+
+  .langkah_langkah .container_hasil .sesudah {
+    margin-left: 0;
+  }
+
+  .langkah_langkah .container_hasil .sebelum h4,
+  .langkah_langkah .container_hasil .sesudah h4 {
+    font-size: 0.85em;
+  }
+
+  .kesimpulan {
+    margin: 20px 30px;
+  }
+
+  .kesimpulan h2 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+
+  .kesimpulan p {
+    font-size: 0.9em;
+  }
+  /* tutorials */
+}

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/logoFirewall.png" type="gambar/tipe ikon" />
+    <title>Firewall</title>
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav class="top_bar" id="top_bar">
+      <h1>Ardiona</h1>
+
+      <ul id="list_container">
+        <div class="close" id="close">
+          <i class="bx bx-x"></i>
+        </div>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#tutorials">Tutorial</a></li>
+      </ul>
+      <div class="menu" id="menu">
+        <i class="bx bx-menu"></i>
+      </div>
+    </nav>
+    <!-- navigation -->
+
+    <!-- home -->
+    <section class="home" id="home">
+      <div class="hero">
+        <div class="container_title">
+          <h1 class="typing">WELCOME</h1>
+        </div>
+        <video
+          class="bg_video"
+          src="img/background.mp4"
+          muted
+          autoplay
+          loop
+        ></video>
+      </div>
+    </section>
+    <!-- home -->
+
+    <!-- about -->
+    <section class="about" id="about">
+      <div class="container-about">
+        <div class="about-title">
+          <h1>Firewall</h1>
+        </div>
+        <div class="article">
+          <div class="container-text">
+            <div class="pengertian">
+              <h3>Pengertian Firewall</h3>
+              <p>
+                Firewall adalah sebuah sistem atau perangkat yang mengizinkan
+                lalu lintas jaringan yang dianggap aman untuk melaluinya dan
+                mencegah lalu lintas jaringan yang tidak aman.
+              </p>
+            </div>
+            <div class="fungsi">
+              <h3>Fungsi Firewall</h3>
+              <ol>
+                <li>
+                  Mengontrol dan mengawasi paket data yang mengalir di jaringan
+                </li>
+                <li>Melakukan autentifikasi terhadap akses</li>
+                <li>
+                  Mencatat setiap transaksi kejadian yang terjadi di firewall
+                </li>
+              </ol>
+            </div>
+          </div>
+          <div class="container-text">
+            <div class="komponen">
+              <h3>Komponen Sistem Firewall</h3>
+              <p>
+                Firewall dapat berupa PC, Router, Midrange, Mainframe, UNIX
+                Workstation, atau gabungan dari itu semua. <br />Firewall dapat
+                terdiri dari satu atau lebih komponen fungsional sebagai berikut
+                :
+              </p>
+              <ul>
+                <li>Packet Filtering Router</li>
+                <li>Application Level Gateway (Proxy)</li>
+                <li>Circuit Level Gateway</li>
+              </ul>
+              <p class="sumber">
+                Situs Sumber :
+                <a
+                  href="https://kominfo.kotabogor.go.id/index.php/post/single/31#:~:text=Firewall%20adalah%20sebuah%20sistem%20atau,lintas%20jaringan%20yang%20tidak%20aman"
+                  >Klik Disini</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about -->
+
+    <!-- tutorials -->
+    <section class="tutorials" id="tutorials">
+      <div class="header">
+        <div class="title">
+          <h1>Cara Blocking Ping Menggunakan Router Mikrotik</h1>
+        </div>
+        <div class="alat_bahan">
+          <div class="title">
+            <h3>Alat dan Bahan</h3>
+            <ul>
+              <li>PC</li>
+              <li>Router Mikrotik</li>
+              <li>Internet</li>
+              <li>Dua Kabel UTP yang sudah terpasang Konektor RJ-45</li>
+              <li>
+                Aplikasi Winbox (Windows)
+                <a target="_blank" href="https://mikrotik.com/download"
+                  >Download Here</a
+                >
+              </li>
+              <li>
+                Aplikasi Pingtools (Android)
+                <a
+                  target="_blank"
+                  href="https://play.google.com/store/apps/details?id=ua.com.streamsoft.pingtools&pcampaignid=web_share"
+                  >Download Here</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="langkah_langkah">
+          <div class="title">
+            <h2>Langkah Langkah</h2>
+          </div>
+          <div class="container">
+            <div class="text">
+              <p>
+                1. Sambungkan Kabel Internet Ke Port Ether1 Pada Router Mikrotik
+              </p>
+            </div>
+
+            <div class="text">
+              <p>
+                2. Sambungkan Kabel UTP Ke Port Ethernet PC dan Port Ether2 Pada
+                Router Mikrotik
+              </p>
+            </div>
+
+            <div class="text">
+              <p>
+                3. Buka Aplikasi Winbox Pada PC, Lalu Masuk Ke Settingan Router
+                Mikrotik
+              </p>
+            </div>
+
+            <div class="text">
+              <p>
+                4. Klik wWireless, Klik Interfaces WLAN Lalu Aktifkan
+                Interfacesnya Dengan Klik Tombol ✅ (Centang)
+              </p>
+              <div class="gambar">
+                <a href="#">
+                  <img src="img/KJ-9/1.PNG" alt="" />
+                </a>
+              </div>
+            </div>
+
+            <div class="text">
+              <p>
+                5. Klik 2x interface WLAN, Pada Tab Wireless, Modenya Pilih
+                <b>"ap bridge"</b>, Bandnya Pilih <b>"2GHz-B/G/N"</b>, Frequency
+                Pilih <b>"auto"</b>, Kasih Nama Untuk SSID, Klik Apply Lalu Ok
+              </p>
+              <div class="gambar">
+                <a href="#">
+                  <img src="img/KJ-9/2.PNG" alt="" />
+                </a>
+              </div>
+            </div>
+
+            <div class="text">
+              <p>
+                6. Klik Bridge, Pada Tab Bridge Klik Add <b>"+"</b>, Klik Apply
+                Lalu Ok
+              </p>
+              <div class="gambar">
+                <a href="#">
+                  <img src="img/KJ-9/3.PNG" alt="" />
+                </a>
+              </div>
+            </div>
+
+            <div class="text">
+              <p>
+                7. Klik Tab Ports Klik Add <b>"+"</b>, Interfacenya Pilih
+                <b>"WLAN1"</b> dan Bridgenya <b>"bridge1"</b>
+              </p>
+              <div class="gambar">
+                <a href="#">
+                  <img src="img/KJ-9/4.PNG" alt="" />
+                </a>
+              </div>
+            </div>
+
+            <div class="text">
+              <p>
+                8. Ulangi Langkah Ke 7, Tapi Pada Menu Interface Pilih
+                <b>"ether2"</b>
+              </p>
+            </div>
+
+            <div class="text">
+              <p>
+                9. Klik IP -> DHCP Client, klik Add <b>"+"</b>, Pilih Interface
+                <b>"ether1"</b>, Klik Apply Lalu Ok
+              </p>
+              <div class="gambar">
+                <a href="#">
+                  <img src="img/KJ-9/5.PNG" alt="" />
+                </a>
+              </div>
+            </div>
+
+            <div class="text">
+              <p>
+                10. Klik IP -> Addresses, Klik Add <b>"+"</b>, Isi Address
+                Dengan IP <b>"192.168.9.1/20"</b>, Interfacenya Pilih
+                <b>"bridge1"</b>, Klik Apply Lalu Ok
+              </p>
+              <div class="gambar">
+                <a href="#">
+                  <img src="img/KJ-9/6.PNG" alt="" />
+                </a>
+              </div>
+            </div>
+
+            <div class="text">
+              <p>
+                11. Klik IP -> DHCP Server, Klik DHCP Setup Lalu Klik Next
+                Sampai Muncul Keterangan <b>"Setup Has Successfully"</b>
+              </p>
+              <div class="gambar">
+                <a href="#">
+                  <img src="img/KJ-9/7.PNG" alt="" />
+                </a>
+              </div>
+            </div>
+
+            <div class="text">
+              <p>
+                12. Klik IP -> Firewall, Klik Tab NAT Lalu Klik Add <b>"+"</b>,
+                Pada Tab General Chainnya Pilih <b>"srcnat"</b>, Out. Interface
+                Pilih <b>"ether1"</b>, Pada Tab Action, Actionnya Pilih
+                <b>"masquerade"</b>, Klik Apply Lalu Ok
+              </p>
+              <div class="container_gambar">
+                <div class="gambar_1">
+                  <a href="#">
+                    <img src="img/KJ-9/8.PNG" alt="" />
+                  </a>
+                </div>
+                <div class="gambar_2">
+                  <a href="#">
+                    <img src="img/KJ-9/9.PNG" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="text">
+              <p>
+                13. Klik IP -> Filter Rules, Klik Add
+                <b>"+"</b>, Pada Tab General Chainnya Pilih <b>"input"</b>,
+                Protocolnya Pilih <b>"icmp"</b>, In. Interfacenya Pilih
+                <b>"bridge"</b>, Klik Tab Action, Actionnya Pilih <b>"drop"</b>,
+                Klik Apply Lalu Ok
+              </p>
+              <div class="container_gambar">
+                <div class="gambar_1">
+                  <a href="#">
+                    <img src="img/KJ-9/10.PNG" alt="" />
+                  </a>
+                </div>
+                <div class="gambar_2">
+                  <a href="#">
+                    <img src="img/KJ-9/11.PNG" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="uji_coba">
+            <div class="title">
+              <h2>Hasil Uji Coba</h2>
+            </div>
+            <div class="container_hasil">
+              <div class="title sebelum">
+                <h4>Sebelum Disetting Blocking Ping</h4>
+                <a href="#">
+                  <img src="img/KJ-9/sebelum.png" alt="" />
+                </a>
+              </div>
+              <div class="title sesudah">
+                <h4>Setelah Disetting Blocking Ping</h4>
+                <a href="#">
+                  <img src="img/KJ-9/sesudah.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="kesimpulan">
+          <h2>kesimpulan</h2>
+          <p>
+            Memahami prinsip-prinsip dasar dan fungsionalitas firewall adalah
+            langkah penting dalam menjaga keamanan jaringan dan sistem komputer
+            dari berbagai serangan cyber.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- tutorials -->
+
+    <footer>
+      <p>Created By <a href="">Ardiona</a> | &copy 2024</p>
+      <div class="socials">
+        <a href="https://www.tiktok.com/@Gamingx1223" target="_blank"
+          ><i class="bx bxl-tiktok"></i
+        ></a>
+        <a href="https://www.instagram.com/Gamingxyz1223/" target="_blank"
+          ><i class="bx bxl-instagram"></i
+        ></a>
+        <a href="https://github.com/ArdionaRahadi" target="_blank"
+          ><i class="bx bxl-github"></i
+        ></a>
+        <a href="https://www.youtube.com/@ardionaRahadi" target="_blank"
+          ><i class="bx bxl-youtube"></i
+        ></a>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
